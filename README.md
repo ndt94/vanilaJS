@@ -1,0 +1,2 @@
+# vanilaJS
+Training vanilaJS
