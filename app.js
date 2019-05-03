@@ -210,3 +210,156 @@
 // // include
 
 // console.log(val);
+
+// Lesson 11: Template literals
+// const name = 'John';
+// const age = 31;
+// const job = 'Web Developer';
+// const city = 'Miami ';
+// let html;
+
+// // Without template strings (es5)
+// html =
+// 	'<ul><li>Name: ' +
+// 	name +
+// 	'</li><li>Age: ' +
+// 	age +
+// 	'</li><li>Job: ' +
+// 	job +
+// 	'</li><li>City: ' +
+// 	city +
+// 	'</li></ul>';
+
+// // With template strings (es6)
+// function hello() {
+// 	return 'hello';
+// }
+// html = `
+//     <ul>
+//         <li>Name: ${name} </li>
+//         <li>Age: ${age} </li>
+//         <li>Job: ${job} </li>
+//         <li>City: ${city} </li>
+//         <li>${2 * 2}</li>
+//         <li>${hello()}</li>
+//         <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
+//     </ul>
+// `;
+// document.body.innerHTML = html;
+
+// Lesson 12: Array and array methods
+// Create some arrays
+// const numbers = [43, 56, 33, 23, 44, 36, 5];
+// const numbers2 = new Array(22, 45, 33, 76, 54);
+// const fruits = ['Apple', 'Banana', 'Orange', 'Pear'];
+// const mixed = [22, 'Hello', true, undefined, null, { a: 1, b: 1 }, new Date()];
+
+// let val;
+
+// // Get array length
+// val = numbers.length;
+// // Check if is array
+// val = Array.isArray(numbers);
+// // Get a single value
+// val = numbers[3];
+// val = numbers[0];
+// // Insert into array
+// numbers[2] = 100;
+// // Find index of value
+// val = numbers.indexOf(36);
+// // MUTATING ARRAYS
+// // Add on to end
+// numbers.push(250);
+// // Add on to front
+// numbers.unshift(120);
+// // Take off from end
+// numbers.pop();
+// // Take off from front
+// numbers.shift();
+// // Splice values
+// numbers.splice(1, 1);
+// // Reverse array
+// numbers.reverse();
+// // Concanate array
+// val = numbers.concat(numbers2);
+// // Sorting array
+// val = fruits.sort();
+// // Use the compare fucntion
+// val = numbers.sort(function(x, y) {
+// 	return x - y;
+// });
+// // Reverse sort
+// val = numbers.sort(function(x, y) {
+// 	return y - x;
+// });
+// // Find
+// function under50(num) {
+// 	return num < 50;
+// }
+// val = numbers.find(under50);
+
+// console.log(numbers);
+// console.log(val);
+
+// Lesson 13: Object literals
+// const person = {
+// 	firstName: 'Steve',
+// 	lastName: 'Smith',
+// 	age: 30,
+// 	email: 'steve@aol.com',
+// 	hobbies: ['music', 'sports'],
+// 	address: {
+// 		city: 'Miami',
+// 		state: 'FL'
+// 	},
+// 	getBirthYear: function() {
+// 		return 2019 - this.age;
+// 	}
+// };
+
+// let val;
+// val = person;
+// // Get specific value
+// val = person.firstName;
+// val = person['firstName'];
+// val = person.age;
+// val = person.hobbies[0];
+// val = person.address.state;
+// val = person.address['city'];
+// val = person.getBirthYear();
+// console.log(val);
+
+// Lesson 14: Dates & Times
+// let val;
+
+// const today = new Date();
+// const birthday = new Date('7-8-1994 07:08:00');
+// val = today.getMonth();
+// val = today.getDate();
+// val = today.getDay();
+// val = today.getFullYear();
+// val = today.getHours();
+// val = today.getMinutes();
+// val = today.getSeconds();
+// val = today.getTime();
+// console.log(val);
+
+// Lesson 15: If else statments & Comparison operator
+const id = 100;
+
+// Equal to
+if (id == 100) {
+	console.log('Correct');
+} else {
+	console.log('Incorrect');
+}
+
+// Not equal to
+if (id != 100) {
+	console.log('Correct');
+} else {
+	console.log('Incorrect');
+}
+
+// TERNARY OPERATOR
+console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
