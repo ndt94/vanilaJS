@@ -345,21 +345,169 @@
 // console.log(val);
 
 // Lesson 15: If else statments & Comparison operator
-const id = 100;
+// const id = 100;
 
-// Equal to
-if (id == 100) {
-	console.log('Correct');
-} else {
-	console.log('Incorrect');
-}
+// // Equal to
+// if (id == 100) {
+// 	console.log('Correct');
+// } else {
+// 	console.log('Incorrect');
+// }
 
-// Not equal to
-if (id != 100) {
-	console.log('Correct');
-} else {
-	console.log('Incorrect');
-}
+// // Not equal to
+// if (id != 100) {
+// 	console.log('Correct');
+// } else {
+// 	console.log('Incorrect');
+// }
 
-// TERNARY OPERATOR
-console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
+// // TERNARY OPERATOR
+// console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
+
+// Lesson 17: Function declarations
+// const square = function(x = 3) {
+// 	return x * x;
+// };
+
+// // console.log(square());
+
+// // IMMIDIATLEY INVOKEABLE FUNCTION EXPRESSIONS - IIFEs
+// (function(name) {
+// 	console.log('Hello ' + name);
+// })('Jesse');
+
+// // Property method
+// const todo = {
+// 	add: function() {
+// 		console.log('Add to do..');
+// 	},
+// 	edit: function(id) {
+// 		console.log(`Edit to do ${id}`);
+// 	}
+// };
+// todo.delete = function() {
+// 	console.log('Delete to do ..');
+// };
+
+// todo.add();
+// todo.edit(22);
+// todo.delete();
+
+// Lesson 18: Loops & Iterations
+// FOR LOOP
+// for (let i = 0; i < 10; i++) {
+// 	if (i === 2) {
+// 		console.log('2 is my fav number!');
+// 		continue;
+// 	}
+// 	if (i === 5) {
+// 		console.log('Stop the loop');
+// 		break;
+// 	}
+// 	console.log(i);
+// }
+
+// WHILE LOOP
+// let i = 0;
+// while (i < 10) {
+// 	console.log('Number ' + i);
+// 	i++;
+// }
+
+// DO WHILE
+// let i = 100;
+// do {
+// 	console.log('Number ' + i);
+// 	i++;
+// } while (i < 10);
+
+// LOOP THROUGH ARRAY
+// const cars = ['Chevy', 'Ford', 'Honda', 'Toyota'];
+
+// for (let i = 0; i < cars.length; i++) {
+// 	console.log(cars[i]);
+// }
+
+// FOREACH LOOP FOR ARRAY (LIKE FOR LOOP IN PYTHON)
+// cars.forEach(function(car, index, array) {
+// 	console.log(`${index} : ${car}`);
+// 	console.log(array);
+// });
+
+// MAP
+// const users = [
+// 	{
+// 		id: 1,
+// 		name: 'John'
+// 	},
+// 	{
+// 		id: 2,
+// 		name: 'Sara'
+// 	},
+// 	{
+// 		id: 3,
+// 		name: 'Karen'
+// 	}
+// ];
+
+// const ids = users.map(function(user) {
+// 	return user.id;
+// });
+
+// console.log(ids);
+
+// FOR IN TO ITERATE THROUGH OBJECT
+// const user = {
+// 	firstName: 'John',
+// 	lastName: 'Doe',
+// 	age: 40
+// };
+
+// for (let x in user) {
+// 	console.log(`${x}: ${user[x]}`);
+// }
+
+// LESSON 19: Window object
+// Scroll points
+// let val;
+// val = window.scrollY;
+// val = window.scrollX;
+
+// // Location object
+// val = window.location.search;
+
+// // Redirect
+// // window.location.href = 'http://google.com';
+
+// // Reload
+// // window.location.reload();
+// console.log(val);
+
+// Lesson 20: Block Scope
+// Global Scope
+// var a = 1;
+// let b = 2;
+// const c = 3;
+
+// function test() {
+//   var a = 4;
+//   let b = 5;
+//   const c = 6;
+//   console.log('Function Scope: ', a, b, c);
+// }
+
+// test();
+
+// if(true) {
+//   // Block Scope
+//   var a = 4;
+//   let b = 5;
+//   const c = 6;
+//   console.log('If Scope: ', a, b, c);
+// }
+
+// for(var a = 0; a < 10; a++) {
+//   console.log(`Loop: ${a}`);
+// }
+
+// console.log('Global Scope: ', a, b, c);
